@@ -1,0 +1,3 @@
+num_list.add(1300) -> num_list.add("1300") //String型ではなくint型であるから
+num_list.add(new Point(300, 100)) -> num_list.add(new Point(300, 100).toString())
+//new Pointでオブシェクトが作成されてString型ではないから

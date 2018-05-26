@@ -1,0 +1,21 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class ExGUISwing_01 extends JFrame{
+  //private JFrame title;
+  ExGUISwing_01(){
+    super("ExGUISwing_01");
+    setSize(600, 300);
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  }
+
+  public void setVisible(){
+
+  }
+
+  public static void main(String argv[]){
+    ExGUISwing_01 swing = new ExGUISwing_01();
+    swing.setVisible(true);
+  }
+}

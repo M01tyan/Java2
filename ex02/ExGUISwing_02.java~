@@ -1,0 +1,33 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+import javax.swing.border.*;
+
+public class ExGUISwing_02 extends ExGUISwing_01{
+  private JButton button = new JButton();
+  private JPanel panel = new JPanel();
+  private JLabel label = new JLabel("label");
+  private BevelBorder border = new BevelBorder(1);
+
+  ExGUISwing_02(){
+    super();
+    Container container = this.getContentPane();
+    container.setLayout(null);
+    button.setSize(70, 30);
+    panel.setSize(300, 300);
+    label.setSize(100, 100);
+    button.setLocation(0, 0);
+    panel.setLocation(100, 100);
+    label.setLocation(70, 70);
+    panel.setBorder(border);
+    label.setFont(new Font(null, Font.BOLD, 10));
+    container.add(button);
+    container.add(panel);
+    panel.add(label);
+  }
+
+  public static void main(String argv[]){
+    ExGUISwing_02 swing = new ExGUISwing_02();
+    swing.setVisible(true);
+  }
+}

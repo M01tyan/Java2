@@ -1,0 +1,12 @@
+import java.applet.Applet;
+import java.awt.*;
+import java.awt.event.*;
+
+public class ExGUIAWT_01 extends Applet{
+    private width = 400;
+    private height = 300;
+    
+    public void init(){
+	setSize(width, height);
+    }
+}

@@ -1,0 +1,11 @@
+import java.applet.Applet;
+import java.awt.*;
+import java.awt.event.*;
+
+public class ExGUIAWT_02 extends ExGUIAWT_01 implements ActionListener{
+    private Button button = new Button("Button");
+
+    public void init(){
+	add(button);
+    }
+}
